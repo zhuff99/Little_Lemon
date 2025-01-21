@@ -1,0 +1,196 @@
+body {
+    background-color: gray !important;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    color: #721817;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    text-align: center;
+}
+
+h2 > span {
+    color: #fa9f42;
+    font-size: 0.75em;
+}
+
+.copyright {
+    padding-top: 12;
+    font-size: 0.75em;
+}
+
+.columns {
+    column-count: 2;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 40px;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer {
+   position: absolute;
+   text-align: center;
+   width:100%;
+   font-size: 12px;
+}
+
+/* General container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between boxes */
+    margin: 20px;
+  }
+  
+  /* Individual box styling */
+  .box {
+    flex: 1;
+    background-color: #97928c; /* Light beige background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    text-align: left; /* Center-align content */
+    padding: 20px;
+  }
+  
+  /* Box header (e.g., titles like "Our New Menu") */
+  .box h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Box paragraph styling */
+  .box p {
+    font-size: 11px;
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+  }
+  
+  /* Links in the box */
+  .box a {
+    color: #0056b3; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image styling within the box */
+  .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+  }
+
+  .box .Description {
+    font-size: 11px;
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+  }
+
+  .box .Hours {
+    font-size: 13px;
+    text-align: center;
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+  }
+
+
+  .box1 {
+    flex: 1;
+    background-image: url('food_wide.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the element */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    text-align: left; /* Center-align content */
+    padding: 20px;
+  }
+
+
+  .box1 h2{
+    text-align: left;
+    color: white;
+  }
+
+  .box1 p{
+    text-align: bottom;
+    font-size: 10px;
+    color: white;
+  }
+
+  .container ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0 auto; /* Centers the list horizontally */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Ensures items are centered */
+    gap: 20px; /* Add spacing between links */
+    max-width: fit-content; /* Ensures it fits neatly */
+}
+
+/* Style the links */
+.container ul li a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Sets text color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Makes the text bold */
+    padding: 10px 15px; /* Adds spacing around the text */
+    border-radius: 5px; /* Adds rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Add hover effect */
+.container ul li a:hover {
+    background-color: #dcdcdc; /* Light background on hover */
+    color: #000; /* Change text color on hover */
+}
+
+/* Adjust spacing in the box */
+.box2 {
+    display: flex;
+    justify-content: center; /* Centers the list inside the box */
+    align-items: center; /* Centers vertically (if needed) */
+    padding: 10px;
+    background-color: #e0d6c9; /* Matches the box background */
+    border-radius: 8px;
+    max-width: fit-content; /* Ensures the box only takes as much width as needed */
+    margin: 0 auto; /* Centers the entire box on the page horizontally */
+}
+
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack boxes vertically on smaller screens */
+    }
+  
+    .box {
+      margin-bottom: 20px;
+    }
+  }

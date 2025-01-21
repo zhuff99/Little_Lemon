@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Little Lemon</title>
+    <meta name="description" content="A breif Description">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:title" content="Zachary's Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image.png">
+    <meta property="og:url" content="https://www.mysite">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, 
+        focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml"> <!--shows icon in web browser tab-->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+
+</head>
+
+<body>
+    <header>
+        <img src="logo.png">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <body>
+            <main>
+              <form>
+                <div>
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                  <label for="bookingDate">Date of Booking:</label>
+                  <input type="date" id="bookingDate" name="bookingDate" required>
+                </div>
+                <div>
+                  <label for="numPeople">Number of People:</label>
+                  <input type="number" id="numPeople" name="numPeople" min="1" max="8" required>
+                </div>
+                <div>
+                  <label for="agreePolicy">I agree to the cancellation policy
+                    <input type="checkbox" id="agreePolicy" name="agreePolicy" required>
+                  </label>
+                </div>
+                <button type="submit">Book Now</button>
+              </form>
+            </main>
+          </body>
+    </main>
+    <footer>
+        <p>Copyright Little Lemon</p>
+    </footer>
+</body>
+
+</html>
